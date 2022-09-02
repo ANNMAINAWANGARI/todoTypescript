@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <section class="content">
+        <section class="content-top">
+            <form >
+                <input class='form-input title' type='text'placeholder='title' required/>
+                <input class='form-input description' type="text" placeholder='description' required/>
+                <input class='form-input date' type="date" placeholder='completion date' required />
+                <button class="enter-button" type="submit">Enter</button>
+            </form>
+        </section>
+        <section class="content-middle">
+            <button class="middle-button completed" >Completed</button>
+            <button class="middle-button incomplete" >Incomplete</button>
+            <button class="middle-button all" >All</button>
+        </section>
+        <section class="content-bottom">
+            
+           
+        </section>
+    </section>
+    <script type='module'src="./helpers/display.js"></script>
+    <script type='module'src="./interfaces/todoInterface.js"></script>
+    
+    <script type='module'src="index.js"></script>
+</body>
+</html>

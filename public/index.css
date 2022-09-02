@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 100%;
+}
+.content{
+    /*background-color:aquamarine;*/
+    /*height:100vh;*/
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*margin-top:20px;*/
+    border:1px solid black;
+    justify-content: center;
+    margin:0 auto;
+}
+.content-top{
+    /*background-color:blueviolet;*/
+    padding:8%;
+}
+.content-top >form >input{
+    border:none;
+    border-bottom: 1px solid rgb(196, 99, 38);
+    outline:none;
+   
+}
+.content-top >form{
+    display:flex;
+    /*align-items: center;*/
+    width:100%;
+    margin:0 auto;
+    /*background-color: darkgoldenrod;*/
+    justify-content: space-evenly;
+
+}
+.enter-button{
+    background-color: rgb(1, 1, 6);
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    color:white;
+}
+.content-middle{
+    margin:0 auto;
+
+}
+.middle-button{
+    margin:10px;
+    padding:10px;
+    color:black;
+    background-color: gray;
+    border:none;
+    border-radius:10px;
+}
+.active{
+    color:white;
+    background-color: black;
+}
+.content-bottom >.task{
+    border-top:1px solid black;
+}
+.h5{
+    color:rgb(106, 108, 109);
+}
+    .task{
+        margin:10px auto;
+        width:80%;
+        display:flex;
+        align-items: center;
+    }
+    .task-content-top{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        width:100%;
+    }
+    .task-content{
+        width:100%;
+    }
+    .task-content-top >div >button{
+        padding:7px;
+        border-radius:10px;
+        border:none;
+        color:white;
+        margin:2px;
+        cursor:pointer;
+        justify-content: space-between;
+    }
+    .edit{
+        background-color: green;
+    }
+    .delete{
+        background-color:red;
+    }
+    .checkbox{
+        margin-right:10px;
+        
+    }
+    @media only screen and (max-width:600px){
+        .content-top >form{
+            flex-direction: column;
+            gap:20px;
+        }
+        .content{
+            width:90%;
+            align-items: center;
+            height:100%;
+        }
+    }
